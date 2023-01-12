@@ -1,7 +1,33 @@
 @tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-7xl;
+    font-family: Lexend Deca, sans-serif;
+  }
+  h2 {
+    font-family: "Inter", sans-serif;
+    @apply text-3xl;
+  }
+  h3 {
+    font-family: "Inter", sans-serif;
+    @apply text-xl;
+  }
+  p,
+  ul,
+  a {
+    font-family: "Inter", sans-serif;
+    @apply text-lg;
+  }
+  button {
+    @apply rounded-full;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 
+/* 
 a {
-  @apply text-blue-500 hover:text-blue-400 hover:underline transition-all;
-}
+  @apply text-blue-500 transition-all hover:text-blue-400 hover:underline;
+} */
