@@ -1,6 +1,18 @@
 {
-  "name": "my-vue-app",
+  "name": "cardd",
   "private": true,
+  "description": "This template should help get you started developing with React and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickyfelix19/Carrdd.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rickyfelix19/Carrdd/issues"
+  },
+  "homepage": "https://github.com/rickyfelix19/Carrdd#readme",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
