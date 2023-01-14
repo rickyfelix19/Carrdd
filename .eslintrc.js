@@ -6,7 +6,7 @@ module.exports = {
   },
   extends: [
     'prettier',
-    'standard-with-typescript'
+    'standard-with-typescript',
   ],
   overrides: [
   ],
@@ -18,9 +18,10 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    'react'
+    'react',
+    'tailwindcss'
   ],
   rules: {
     'prettier/prettier': 'error'
   }
-}
+};

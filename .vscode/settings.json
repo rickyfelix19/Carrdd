@@ -8,5 +8,8 @@
   },
   "editor.quickSuggestions": {
     "strings": true
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }

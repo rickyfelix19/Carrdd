@@ -1,64 +1,136 @@
 import { useState } from "react";
-import logo from "./logo.svg";
-import poweredBy from "./powered-by-vitawind-dark.png";
+import Button from './components/Button';
+import Card from './components/Card';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="text-center selection:bg-green-900">
-      <header className="flex min-h-screen flex-col items-center justify-center bg-[#282c34] text-white">
-        <img
-          src={logo}
-          className="animate-speed h-60 motion-safe:animate-spin"
-          alt="logo"
-        />
-        <style>
-          {
-            "\
-            .animate-speed{\
-              animation-duration:20s;\
-            }\
-          "
-          }
-        </style>
-        <p className="bg-gradient-to-r from-emerald-300 to-sky-300 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent">
-          Vite + React + Typescript + Tailwindcss v3
-        </p>
-        <p className="mt-3">
-          <button
-            type="button"
-            className="my-6 rounded bg-gray-300 px-2 py-2 text-[#282C34] transition-all hover:bg-gray-200"
-            onClick={() => setCount((count) => count + 1)}
-          >
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code className="text-[#8d96a7]">App.tsx</code> and save to test
-          HMR updates.
-        </p>
-        <p className="mt-3 flex gap-3 text-center text-[#8d96a7]">
-          <a
-            className="text-[#61dafb] transition-all hover:text-blue-400"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="text-[#61dafb] transition-all hover:text-blue-400"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-        <img src={poweredBy} className="mx-auto my-8" alt="powered-by" />
-      </header>
+          <div>
+        <div>
+        <div>
+          <img src="./src/assets/Ricky-Felix.jpg" alt="Ricky Felix picture" />
+          <h1>Ricky Felix</h1>
+
+          <h3>
+            <strong>a UI/UX Designer and a Front-End Developer</strong>
+          </h3>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://docs.google.com/document/d/1EB-xPrKJwBG0rjFWHphBPPDc3juqEO63/edit?usp=share_link&ouid=101734197381420246632&rtpof=true&sd=true"
+                className="mx-auto inline-block rounded-full bg-blue-600 px-5 py-2 align-middle font-semibold text-white no-underline hover:bg-blue-700 md:mx-0"
+              >
+                Download Resume
+              </a>
+            </li>
+
+            <li>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://rickyfelix019.super.site/"
+                className="mx-auto inline-block rounded-full border-2 border-solid border-gray-600 px-5 py-2 align-middle font-semibold no-underline hover:border-blue-700 md:mx-0"
+              >
+                Open Website
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      <hr />
+
+        <div>
+          <h2>Summary</h2>
+          <p>
+            Ricky Felix is a recent UTS Bachelor of Science in IT graduate.
+            After finishing his degree, he continued his studies at University
+            of Sydney in Master of Interaction Design and Electronic Arts
+            (MIDEA).
+          </p>
+          <div>
+            <ul>
+              <li>
+                <i className="fa-regular fa-circle-chevron-right"></i>
+                Granted with USYD International Students Award Scholarship for
+                2023,
+              </li>
+              <li>
+                <i className="fa-regular fa-circle-chevron-right"></i>
+                Currently one of the student mentor for his faculty (USYD's
+                Architecture, Design, and Planning),
+              </li>
+              <li>
+                <i className="fa-regular fa-circle-chevron-right"></i>
+                Joined the PPI-Australia (the Indonesian Student Association in
+                Australia) and contributed as Front-End Developer and UI/UX
+                Designer for multiple projects.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      <hr />
+
+        <h2>Find me at:</h2>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/rickyfelix19/"
+              className="mx-auto inline-block rounded-full border-2 border-solid border-gray-600 px-5 py-2 align-middle font-semibold no-underline hover:border-blue-700 md:mx-0"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/rickyfelix19"
+              className="mx-auto inline-block rounded-full border-2 border-solid border-gray-600 px-5 py-2 align-middle font-semibold no-underline hover:border-blue-700 md:mx-0"
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="mailto:rickyfelix19@outlook.com"
+              className="mx-auto inline-block rounded-full border-2 border-solid border-gray-600 px-5 py-2 align-middle font-semibold no-underline hover:border-blue-700 md:mx-0"
+            >
+              Email
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://onedrive.live.com/?authkey=%21AEVYvrGv7Nb%5FDKE&id=DB2641837DEACB12%211042&cid=DB2641837DEACB12/"
+              className="mx-auto inline-block rounded-full border-2 border-solid border-gray-600 px-5 py-2 align-middle font-semibold no-underline hover:border-blue-700 md:mx-0"
+            >
+              Dropbox
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.figma.com/team_invite/redeem/kpiWLZwGT85YBN1DnWxpUh"
+              className="mx-auto inline-block rounded-full border-2 border-solid border-gray-600 px-5 py-2 align-middle font-semibold no-underline hover:border-blue-700 md:mx-0"
+            >
+              Figma
+            </a>
+          </li>
+        </ul>
+    </div>
     </div>
   );
 }
