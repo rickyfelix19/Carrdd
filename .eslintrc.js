@@ -5,10 +5,14 @@ module.exports = {
   },
   extends: ["airbnb", "prettier"],
   parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["prettier", "eslint-plugin-html"],
+  plugins: ["prettier"],
   rules: {
     "prettier/prettier": "error",
   },
