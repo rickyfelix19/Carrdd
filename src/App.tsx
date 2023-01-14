@@ -1,13 +1,13 @@
-import { useState } from "react";
-import Button from './components/Button';
-import Card from './components/Card';
+import { useState } from 'react'
+import Button from './components/Button'
+import Card from './components/Card'
 
-function App() {
-  const [count, setCount] = useState(0);
+function App () {
+  const [count, setCount] = useState(0)
 
   return (
-          <div>
-        <div>
+    <div>
+      <div>
         <div>
           <img src="./src/assets/Ricky-Felix.jpg" alt="Ricky Felix picture" />
           <h1>Ricky Felix</h1>
@@ -43,7 +43,7 @@ function App() {
           </ul>
         </div>
 
-      <hr />
+        <hr />
 
         <div>
           <h2>Summary</h2>
@@ -75,7 +75,7 @@ function App() {
           </div>
         </div>
 
-      <hr />
+        <hr />
 
         <h2>Find me at:</h2>
         <ul>
@@ -130,9 +130,9 @@ function App() {
             </a>
           </li>
         </ul>
+      </div>
     </div>
-    </div>
-  );
+  )
 }
 
-export default App;
+export default App
