@@ -1,6 +1,6 @@
 @tailwind base;
 
-@layer base {
+/* @layer base {
   h1 {
     @apply text-7xl;
     font-family: Lexend Deca, sans-serif;
@@ -22,7 +22,7 @@
   button {
     @apply rounded-full;
   }
-}
+} */
 
 @tailwind components;
 @tailwind utilities;
